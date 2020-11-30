@@ -1,0 +1,38 @@
+{
+  "name": "zaplink-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "yarn serve",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:e2e": "vue-cli-service test:e2e",
+    "test:headless": "vue-cli-service test:e2e --headless",
+    "test:report": "yarn test:merge & yarn test:html & yarn test:mv",
+    "test:merge": "mochawesome-merge > mochawesome-report/report.json",
+    "test:html": "marge mochawesome-report//\\report.json",
+    "test:mv": "mv tests\\e2e\\screenshots mochawesome-report\\assets\\screenshots"
+  },
+  "dependencies": {
+    "axios": "0.20.0",
+    "buefy": "0.9.3",
+    "core-js": "3.6.5",
+    "mocha": "8.2.1",
+    "mochawesome": "6.2.1",
+    "mochawesome-merge": "4.2.0",
+    "vue": "2.6.12",
+    "vue-router": "3.4.4"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-e2e-cypress": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
