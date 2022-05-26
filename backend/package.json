@@ -18,13 +18,14 @@
   "author": "Ana Carolina",
   "license": "MIT",
   "dependencies": {
-    "@hapi/code": "^8.0.2",
-    "@hapi/hapi": "^20.0.1",
-    "@hapi/lab": "^24.0.0",
-    "hapi": "^18.1.0",
-    "md5": "^2.3.0",
-    "mongoose": "^5.10.7",
-    "node.js": "^0.0.1-security",
-    "nodemon": "^2.0.4"
+    "@hapi/code": "9.0.0",
+    "@hapi/eslint-plugin": "6.0.0",
+    "@hapi/hapi": "20.2.2",
+    "@hapi/lab": "25.0.1",
+    "hapi": "18.1.0",
+    "md5": "2.3.0",
+    "mongoose": "6.3.4",
+    "node.js": "0.0.1-security",
+    "nodemon": "2.0.16"
   }
 }
